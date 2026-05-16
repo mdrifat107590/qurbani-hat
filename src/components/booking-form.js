@@ -50,7 +50,14 @@ export function BookingForm({ animal, currentUser }) {
     <section className="page-shell py-14">
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
         <article className="overflow-hidden rounded-[30px] border border-[var(--border)] bg-[rgba(255,250,241,0.9)] shadow-[0_26px_70px_rgba(73,47,21,0.12)]">
-          <img src={animal.image} alt={animal.name} className="h-[320px] w-full object-cover" />
+          <img
+            src={animal.image}
+            alt={animal.name}
+            onError={(event) => {
+              event.currentTarget.src = "/animal-placeholder.svg";
+            }}
+            className="h-[320px] w-full object-cover"
+          />
           <div className="space-y-5 p-6">
             <div className="flex flex-wrap items-center gap-3">
               <span className="rounded-full bg-[var(--accent)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white">

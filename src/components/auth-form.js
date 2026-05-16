@@ -98,7 +98,7 @@ export function AuthForm({ mode = "login", nextPath = "/" }) {
             <h2 className="text-3xl font-black">{isRegister ? "Register" : "Login"}</h2>
             <p className="text-sm text-black/60">
               {isRegister
-                ? "Register with your name, email, photo URL, and password."
+                ? "Register with your name, email, and password."
                 : "Enter your email and password to continue."}
             </p>
           </div>
@@ -118,7 +118,7 @@ export function AuthForm({ mode = "login", nextPath = "/" }) {
                 value={formData.photoURL}
                 onChange={handleChange}
                 type="url"
-                placeholder="Photo URL"
+                placeholder="Photo URL (optional)"
                 className="w-full rounded-2xl border border-[var(--border)] bg-white/80 px-4 py-3 outline-none transition focus:border-[var(--accent)]"
               />
             </>

@@ -1,11 +1,16 @@
 import Link from "next/link";
+import { Avatar } from "@/components/avatar";
 
 export function ProfilePanel({ user }) {
   return (
     <section className="page-shell flex min-h-[calc(100vh-220px)] items-center py-14">
       <div className="grid w-full gap-8 rounded-[32px] border border-[var(--border)] bg-[rgba(255,250,241,0.92)] p-5 shadow-[0_30px_80px_rgba(73,47,21,0.12)] lg:grid-cols-[0.9fr_1.1fr] lg:p-6">
         <div className="rounded-[28px] bg-[linear-gradient(180deg,rgba(182,85,46,0.16),rgba(47,111,87,0.12))] p-8">
-          <img src={user.photoURL} alt={user.name} className="mx-auto h-40 w-40 rounded-full object-cover shadow-lg" />
+          <Avatar
+            name={user.name}
+            photoURL={user.photoURL}
+            className="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
+          />
           <div className="mt-8 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--accent)]">Logged in profile</p>
             <h1 className="mt-3 text-4xl font-black">{user.name}</h1>

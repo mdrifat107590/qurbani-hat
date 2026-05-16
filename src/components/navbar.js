@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useAuth } from "@/components/auth-provider";
+import { Avatar } from "@/components/avatar";
 import { siteConfig } from "@/lib/site";
 
 const navLinks = [
@@ -55,11 +56,7 @@ export function Navbar() {
           {user ? (
             <>
               <Link href="/my-profile" className="flex items-center gap-3 rounded-full border border-[var(--border)] bg-white/70 px-3 py-2">
-                <img
-                  src={user.photoURL}
-                  alt={user.name}
-                  className="h-9 w-9 rounded-full object-cover"
-                />
+                <Avatar name={user.name} photoURL={user.photoURL} className="h-9 w-9 rounded-full object-cover" />
                 <span className="text-sm font-semibold">{user.name}</span>
               </Link>
               <button
@@ -119,7 +116,7 @@ export function Navbar() {
           {user ? (
             <div className="flex items-center justify-between gap-3 rounded-2xl bg-white/70 px-4 py-3">
               <Link href="/my-profile" onClick={() => setOpen(false)} className="flex items-center gap-3">
-                <img src={user.photoURL} alt={user.name} className="h-10 w-10 rounded-full object-cover" />
+                <Avatar name={user.name} photoURL={user.photoURL} className="h-10 w-10 rounded-full object-cover" />
                 <span className="text-sm font-semibold">{user.name}</span>
               </Link>
               <button type="button" onClick={handleLogout} className="text-sm font-semibold text-[var(--accent)]">

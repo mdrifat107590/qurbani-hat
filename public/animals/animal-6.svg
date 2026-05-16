@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#f6efe2" />
+  <rect x="80" y="80" width="1040" height="740" rx="48" fill="#fffaf1" stroke="#e3d3bf" stroke-width="2" />
+  <text x="120" y="220" font-family="Arial, sans-serif" font-size="48" fill="#3b2a1d" font-weight="700">Black Bengal Market Goat</text>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-size="26" fill="#6e5b49">Black Bengal | Cumilla</text>
+  <g fill="#2f6f57" opacity="0.2">
+    <circle cx="960" cy="600" r="100" />
+    <circle cx="840" cy="540" r="36" />
+  </g>
+</svg>

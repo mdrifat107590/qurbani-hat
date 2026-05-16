@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#f5ede0" />
+  <rect x="80" y="80" width="1040" height="740" rx="48" fill="#fffaf1" stroke="#e3d3bf" stroke-width="2" />
+  <text x="120" y="220" font-family="Arial, sans-serif" font-size="48" fill="#3b2a1d" font-weight="700">Murrah River Buffalo</text>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-size="26" fill="#6e5b49">Murrah | Pabna</text>
+  <g fill="#b6552e" opacity="0.18">
+    <path d="M820 620 C880 520, 980 520, 1040 620 C980 700, 880 700, 820 620 Z" />
+    <circle cx="910" cy="560" r="34" />
+  </g>
+</svg>

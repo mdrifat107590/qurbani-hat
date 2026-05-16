@@ -10,7 +10,8 @@ export const animals = [
     location: "Bogura",
     description:
       "Healthy deshi cow suitable for Qurbani. Well fed with natural feed and raised in open air.",
-    image: "https://source.unsplash.com/featured/1200x900/?cow&sig=1",
+    image:
+      "https://i.ibb.co.com/wZTnzgxc/download-3.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Large Animal",
   },
   {
@@ -24,7 +25,8 @@ export const animals = [
     location: "Sirajganj",
     description:
       "Strong Brahman cow with a calm temperament, perfect for a premium Qurbani booking.",
-    image: "https://source.unsplash.com/featured/1200x900/?cattle&sig=2",
+    image:
+      "https://i.ibb.co.com/ymJ1DrFF/download-2.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Large Animal",
   },
   {
@@ -38,7 +40,8 @@ export const animals = [
     location: "Pabna",
     description:
       "Heavy Murrah buffalo with excellent body condition and reliable milk-fed growth.",
-    image: "https://source.unsplash.com/featured/1200x900/?buffalo&sig=3",
+    image:
+      "https://i.ibb.co.com/tpJFym8L/download-4.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Large Animal",
   },
   {
@@ -52,7 +55,8 @@ export const animals = [
     location: "Kushtia",
     description:
       "Premium Nili Ravi buffalo with a broad frame and strong market appeal for group booking.",
-    image: "https://source.unsplash.com/featured/1200x900/?water-buffalo&sig=4",
+    image:
+      "https://i.ibb.co.com/mVRXtD6L/download-5.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Large Animal",
   },
   {
@@ -66,7 +70,8 @@ export const animals = [
     location: "Natore",
     description:
       "Tall Jamunapari goat with neat body structure and lively movement for a clean Qurbani choice.",
-    image: "https://source.unsplash.com/featured/1200x900/?goat&sig=5",
+    image:
+      "https://i.ibb.co.com/SXQhKf9Q/download-1.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Small Animal",
   },
   {
@@ -80,7 +85,8 @@ export const animals = [
     location: "Cumilla",
     description:
       "Popular Black Bengal goat with compact build and strong local demand for quick booking.",
-    image: "https://source.unsplash.com/featured/1200x900/?goat,livestock&sig=6",
+    image:
+      "https://i.ibb.co.com/NnSRB7cJ/download-6.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Small Animal",
   },
   {
@@ -94,31 +100,32 @@ export const animals = [
     location: "Rangpur",
     description:
       "Awassi sheep with a healthy frame, soft coat, and a balanced size for family bookings.",
-    image: "https://source.unsplash.com/featured/1200x900/?sheep&sig=7",
+    image:
+      "https://i.ibb.co.com/27WNZw4B/images.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Small Animal",
   },
   {
     id: 8,
-    name: "Garole Desert Sheep",
+    name: "Desi Sheep",
     type: "Sheep",
-    breed: "Garole",
+    breed: "Desi",
     price: 24000,
     weight: 28,
     age: 2,
     location: "Jashore",
     description:
-      "Garole sheep with a neat silhouette and strong local adaptation for dependable Qurbani booking.",
-    image: "https://source.unsplash.com/featured/1200x900/?lamb&sig=8",
+      "Desi sheep with a neat silhouette and strong local adaptation for dependable Qurbani booking.",
+    image:
+      "https://i.ibb.co.com/WNX9vy8G/download-7.jpg?auto=format&fit=crop&w=1200&q=80",
     category: "Small Animal",
   },
 ];
+
 
 export async function getAnimals() {
   await new Promise((resolve) => setTimeout(resolve, 350));
   return animals;
 }
-
-export async function getAnimalById(id) {
-  const records = await getAnimals();
-  return records.find((animal) => animal.id === Number(id)) || null;
+export function getAnimalById(id) {
+  return animals.find((animal) => animal.id === Number(id));
 }

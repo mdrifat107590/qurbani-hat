@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#f6efe2" />
+  <rect x="80" y="80" width="1040" height="740" rx="48" fill="#fffaf1" stroke="#e3d3bf" stroke-width="2" />
+  <text x="120" y="220" font-family="Arial, sans-serif" font-size="48" fill="#3b2a1d" font-weight="700">Garole Desert Sheep</text>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-size="26" fill="#6e5b49">Garole | Jashore</text>
+  <g fill="#2f6f57" opacity="0.2">
+    <path d="M840 600 C900 520, 980 520, 1040 600 C980 680, 900 680, 840 600 Z" />
+    <circle cx="920" cy="560" r="34" />
+  </g>
+</svg>

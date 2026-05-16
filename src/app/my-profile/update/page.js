@@ -3,8 +3,8 @@ import { redirect } from "next/navigation";
 import { UpdateForm } from "@/components/update-form";
 import { AUTH_COOKIE, readCookieSession } from "@/lib/auth";
 
-export default function UpdateProfilePage() {
-  const cookieStore = cookies();
+export default async function UpdateProfilePage() {
+  const cookieStore = await cookies();
   const currentUser = readCookieSession(cookieStore.get(AUTH_COOKIE)?.value);
 
   if (!currentUser) {

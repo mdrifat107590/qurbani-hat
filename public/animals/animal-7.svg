@@ -1,0 +1,10 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#f5ede0" />
+  <rect x="80" y="80" width="1040" height="740" rx="48" fill="#fffaf1" stroke="#e3d3bf" stroke-width="2" />
+  <text x="120" y="220" font-family="Arial, sans-serif" font-size="48" fill="#3b2a1d" font-weight="700">Awassi Wool Sheep</text>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-size="26" fill="#6e5b49">Awassi | Rangpur</text>
+  <g fill="#b6552e" opacity="0.18">
+    <rect x="860" y="520" width="220" height="140" rx="70" />
+    <circle cx="820" cy="590" r="50" />
+  </g>
+</svg>

@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
           <ToastProvider />
           <div className="flex min-h-screen flex-col">
             <Navbar />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 pt-8 pb-10 md:pt-10 md:pb-14">{children}</main>
             <Footer />
           </div>
         </AuthProvider>
