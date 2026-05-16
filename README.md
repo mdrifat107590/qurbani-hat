@@ -1,6 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Qurbani Hat
+
+Qurbani Hat is a modern livestock marketplace built with Next.js and Tailwind CSS. Users can explore cattle, buffalo, goats, and sheep, view full details, and place a booking after authentication.
+
+## Live URL
+
+https://qurbani-hat.vercel.app
+
+## Key Features
+
+- Responsive navbar and footer
+- Hero section with featured animals
+- All animals page with price sorting
+- Private details page with booking form
+- Login, register, and Google social sign-in flow
+- My profile page and update information route
+- Toast notifications and loading states
+- Not found page
+- Environment-based configuration
+- Animate.css for motion accents
+
+## NPM Packages Used
+
+- next
+- react
+- react-dom
+- react-hot-toast
+- animate.css
+- firebase
+
+## Environment Variables
+
+Create a `.env.local` file based on the example below if you want to customize contact details or enable Firebase Google sign-in.
+
+```bash
+NEXT_PUBLIC_SITE_NAME=Qurbani Hat
+NEXT_PUBLIC_SITE_URL=https://qurbani-hat.vercel.app
+NEXT_PUBLIC_CONTACT_EMAIL=hello@qurbanihat.com
+NEXT_PUBLIC_CONTACT_PHONE=+880 1711 000 000
+NEXT_PUBLIC_FACEBOOK_URL=https://facebook.com/qurbanihat
+NEXT_PUBLIC_INSTAGRAM_URL=https://instagram.com/qurbanihat
+NEXT_PUBLIC_YOUTUBE_URL=https://youtube.com/qurbanihat
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+```
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000 in your browser.
 
 First, run the development server:
 
